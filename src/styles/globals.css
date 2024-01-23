@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: black; */
+  background-color: rgb(76, 29, 149, 0.9);
+  /* overscroll-behavior: none; */
+  overflow: scroll;
+  /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+  font-size: 0;
+}
+
+/*Google Chrome、Safariへの対応*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  object-fit: cover;
+}
